@@ -14,7 +14,7 @@ func main() {
 	}
 	whisperProxy := httputil.NewSingleHostReverseProxy(whisperTarget)
 
-	defaultTarget, err := url.Parse("http://localhost:8003")
+	defaultTarget, err := url.Parse("http://localhost:8880")
 	if err != nil {
 		log.Fatal(err)
 	}

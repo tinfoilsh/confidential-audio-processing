@@ -20,14 +20,9 @@ shim:
     - https://chat.tinfoil.sh
 
 containers:
-  - name: "dia"
-    image: "ghcr.io/tinfoilsh/dia-tts-server:sha-d754923"
+  - name: "kokoro"
+    image: "ghcr.io/remsky/kokoro-fastapi-gpu"
     args:
-      - "-v /mnt/ramdisk/model_cache:/app/model_cache"
-      - "-v /mnt/ramdisk/reference_audio:/app/reference_audio"
-      - "-v /mnt/ramdisk/outputs:/app/outputs"
-      - "-v /mnt/ramdisk/voices:/app/voices"
-      - "--env HF_HUB_ENABLE_HF_TRANSFER=1"
       - "--gpus all"
   - name: "proxy"
     image: "ghcr.io/tinfoilsh/confidential-audio-processing:latest"
