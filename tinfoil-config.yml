@@ -1,4 +1,4 @@
-cvm-version: 0.0.33
+cvm-version: 0.0.35
 ovmf-version: 0.0.2
 cpus: 16
 memory: 65536
@@ -21,7 +21,7 @@ shim:
 
 containers:
   - name: "kokoro"
-    image: "ghcr.io/remsky/kokoro-fastapi-gpu"
+    image: "ghcr.io/tinfoilsh/kokoro-fastapi-gpu:v0.3.0"
     args:
       - "--gpus all"
   - name: "proxy"
