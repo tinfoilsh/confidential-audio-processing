@@ -1,4 +1,4 @@
-cvm-version: 0.0.35
+cvm-version: 0.0.36
 ovmf-version: 0.0.2
 cpus: 16
 memory: 65536
