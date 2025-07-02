@@ -15,6 +15,7 @@ shim:
   upstream-port: 8089
   control-plane: https://api.tinfoil.sh
   publish-attestation: true
+  tls-challenge: dns
   origins:
     - https://tinfoil.sh
     - https://chat.tinfoil.sh
