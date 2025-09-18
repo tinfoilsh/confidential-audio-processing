@@ -22,7 +22,7 @@ shim:
 
 containers:
   - name: "kokoro"
-    image: "ghcr.io/tinfoilsh/kokoro-fastapi-gpu:v0.3.0"
+    image: "ghcr.io/tinfoilsh/kokoro-fastapi-gpu:v0.2.4"
     args:
       - "--gpus all"
   - name: "proxy"
