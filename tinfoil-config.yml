@@ -1,5 +1,5 @@
-shim-version: v0.2.5@sha256:ffdc7ca8e1a974c318533262c072b2c6c0871431b1e951fde7692388b5854cc3
-cvm-version: 0.5.6
+shim-version: v0.1.9@sha256:410510c9e8e4c7489dd201fede302dee8455075ca28f4f0abbf84bded943b8f1
+cvm-version: 0.1.3
 ovmf-version: 0.0.2
 cpus: 16
 memory: 65536
@@ -14,7 +14,7 @@ shim:
   listen-port: 443
   upstream-port: 8089
   control-plane: https://api.tinfoil.sh
-  publish-attestation: true
+  publish-attestation: false
   tls-challenge: dns
 
 containers:
@@ -24,3 +24,4 @@ containers:
       - "--gpus all"
   - name: "proxy"
     image: "ghcr.io/tinfoilsh/confidential-audio-processing:latest"
+
